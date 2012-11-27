@@ -38,7 +38,8 @@ setup(name='wcc.vocabularies',
           'zope.interface',
           'zope.component',
           'z3c.formwidget',
-          'five.grok'
+          'five.grok',
+          'pycountry',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
