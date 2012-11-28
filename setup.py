@@ -37,7 +37,7 @@ setup(name='wcc.vocabularies',
           'zope.schema',
           'zope.interface',
           'zope.component',
-          'z3c.formwidget',
+          'z3c.formwidget.query',
           'five.grok',
           'pycountry',
           # -*- Extra requirements: -*-
