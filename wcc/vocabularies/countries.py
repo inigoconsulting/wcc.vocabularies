@@ -203,11 +203,16 @@ COUNTRIES = [
 {'timezones': ['Europe/London'], 'code': 'GB', 'continent': 'Europe', 'name': 'United Kingdom', 'capital': 'London'},
 ]
 
+COUNTRY_TERMS=[ 
+    SimpleTerm(
+        value=c['code'],
+        title='%s (%s)' % (c['name'], c['code'])
+    ) for c in sorted(COUNTRIES, key=lambda x: x['name'])
+]
+
 class VocabularyFactory(object):
     def __call__(self, context):
-        terms = [SimpleTerm(value=c['code'], 
-                    title='%s (%s)' % (c['name'], c['code'])) for c in COUNTRIES]
-        return SimpleVocabulary(terms)
+        return SimpleVocabulary(COUNTRY_TERMS)
 
 grok.global_utility(VocabularyFactory, IVocabularyFactory,
         name='wcc.vocabulary.country')
