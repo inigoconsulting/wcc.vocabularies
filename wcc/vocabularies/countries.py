@@ -201,6 +201,19 @@ COUNTRIES = [
 {'timezones': ['Europe/Zurich'], 'code': 'CH', 'continent': 'Europe', 'name': 'Switzerland', 'capital': 'Bern'},
 {'timezones': ['Asia/Dubai'], 'code': 'AE', 'continent': 'Asia', 'name': 'United Arab Emirates', 'capital': 'Abu Dhabi'},
 {'timezones': ['Europe/London'], 'code': 'GB', 'continent': 'Europe', 'name': 'United Kingdom', 'capital': 'London'},
+{'timezones': ['Pacific/Tahiti', 'Pacific/Marquesas', 'Pacific/Gambier'], 'code': 'PF', 'continent': 'Oceania', 'name':'French Polynesia', 'capital': 'Papeetē'},
+{'timezones': ['Pacific/Niue'], 'code': 'NU', 'continent': 'Oceania', 'name':'Niue', 'capital': 'Alofi'},
+{'timezones': ['Pacific/Noumea'], 'code': 'NC', 'continent': 'Oceania', 'name':'New Caledonia', 'capital': 'Nouméau'},
+{'timezones': ['Pacific/Rarotonga'], 'code': 'CK', 'continent': 'Oceania', 'name':'Cook Islands', 'capital': 'Avarua'},
+{'timezones': ['America/Puerto_Rico'], 'code': 'PR', 'continent': 'North America', 'name':'Puerto Rico', 'capital': 'San Juan'},
+{'timezones': ['America/Puerto_Rico'], 'code': 'AN', 'continent': 'North America', 'name':'Netherlands Antilles', 'capital': 'Willemstad'},
+{'timezones': ['Asia/Hong_Kong'], 'code': 'TW', 'continent': 'Asia', 'name':'Taiwan', 'capital': 'Taipei'},
+{'timezones': ['Asia/Hong_Kong'], 'code': 'HK', 'continent': 'Asia', 'name':'Hong Kong', 'capital': 'Hong Kong'},
+{'timezones': ['Pacific/Pago_Pago'], 'code': 'AS', 'continent': 'Oceania', 'name':'American Samoa', 'capital': 'Pago Pago'},
+{'timezones': ['Africa/Juba'], 'code': 'SS', 'continent': 'Africa', 'name':'South Sudan', 'capital': 'Juba'},
+
+
+
 ]
 
 COUNTRY_TERMS=[ 
