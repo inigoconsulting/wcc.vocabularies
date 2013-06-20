@@ -224,9 +224,16 @@ COUNTRY_TERMS=[
     ) for c in sorted(COUNTRIES, key=lambda x: x['name'])
 ]
 
+COUNTRY_CODE_NAMES = dict([
+    (c['code'], c['name']) for c in COUNTRIES
+])
+
 class VocabularyFactory(object):
     def __call__(self, context):
         return SimpleVocabulary(COUNTRY_TERMS)
+
+    def name_from_code(self, code):
+        return COUNTRY_CODE_NAMES[code]
 
 grok.global_utility(VocabularyFactory, IVocabularyFactory,
         name='wcc.vocabulary.country')
